@@ -27,10 +27,10 @@ Persona is a comprehensive university management system designed to streamline a
 
 ## Screenshots
 
-![Dashboard](Screenshots/WhatsApp%20Image%202025-07-06%20at%2016.25.50_b53e1701.jpg)
+![Dashboard](Screenshots/Screenshot%202025-07-06%20161732.png )
 *Main dashboard with statistics and analytics*
 
-![Fingerprint Scanner](Screenshots/Screenshot%202025-07-06%20161732.png)
+![Fingerprint Scanner](Screenshots/WhatsApp%20Image%202025-07-06%20at%2016.25.50_b53e1701.jpg)
 *The harware device for fingerprint scanning*
 
 ## Technologies Used
