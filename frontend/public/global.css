@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+:root {
+	/* Main colors */
+	--primary-color: #4361ee;
+	--primary-light: #4895ef;
+	--primary-dark: #3f37c9;
+	--accent-color: #f72585;
+	--accent-light: #ff4d6d;
+	
+	/* UI colors */
+	--success-color: #4cc9f0;
+	--warning-color: #f8961e;
+	--error-color: #f94144;
+	
+	/* Neutral colors */
+	--text-dark: #212529;
+	--text-light: #f8f9fa;
+	--text-muted: #6c757d;
+	
+	/* Background colors */
+	--bg-light: #f8f9fa;
+	--bg-dark: #121212;
+	--card-light: #ffffff;
+	--card-dark: #1e1e1e;
+	
+	/* Spacing */
+	--spacing-xs: 0.25rem;
+	--spacing-sm: 0.5rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+	--spacing-xl: 2rem;
+	
+	/* Border radius */
+	--radius-sm: 0.25rem;
+	--radius-md: 0.5rem;
+	--radius-lg: 1rem;
+	--radius-full: 9999px;
+	
+	/* Shadows */
+	--shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	--shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+	--shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+	
+	/* Transitions */
+	--transition-fast: 150ms ease;
+	--transition-normal: 250ms ease;
+	--transition-slow: 350ms ease;
+	
+	/* Legacy variables for backward compatibility */
+	--first-primary-accent-color: var(--accent-color);
+	--secondary-accent-color: var(--accent-light);
+	--tertiary-accent-color: var(--primary-color);
+	--background-color: var(--bg-light);
+}
+
+body {
+	color: var(--text-dark);	
+	font-family: 'Inter', sans-serif;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	background-color: var(--bg-light);
+	line-height: 1.5;
+}
+
+body.dark-theme {
+	background-color: var(--bg-dark);
+	color: var(--text-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+	margin-top: 0;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+input {
+	padding: 0.75rem 1rem;
+	font-size: 1rem;
+	border-radius: var(--radius-md);
+	border: 1px solid #e2e8f0;
+	background-color: white;
+	transition: border-color var(--transition-fast);
+	width: 100%;
+	box-sizing: border-box;
+}
+
+input:focus {
+	outline: none;
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+button {
+	border: none;
+	background-color: var(--primary-color);
+	color: white;
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	border-radius: var(--radius-md);
+	transition: all var(--transition-fast);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+button:hover {
+	background-color: var(--primary-dark);
+	transform: translateY(-1px);
+}
+
+button:active {
+	transform: translateY(0);
+}
+
+.drop-down {
+	padding: 0.75rem 1rem;
+	margin: 0.5rem 0;
+	border-radius: var(--radius-md);
+	color: var(--text-dark);
+	border: 1px solid #e2e8f0;
+	background-color: white;
+	width: 100%;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	color: var(--text-dark);
+}
+
+/* Utility classes */
+.text-muted {
+	color: var(--text-muted);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.gap-sm {
+	gap: var(--spacing-sm);
+}
+
+.gap-md {
+	gap: var(--spacing-md);
+}
+
+.w-full {
+	width: 100%;
+}
